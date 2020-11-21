@@ -37,7 +37,6 @@ public class HandleTruthTest {
         Set<String> set8 = new HashSet<>(Arrays.asList("explain", "very", "guns", "saved", "lieutenant", "about", "your", "these", "saves", "would", "pick", "fathom", "grotesque", "incomprehensible", "because", "greater", "give", "sleeps", "went", "loyalty", "myself", "them", "then", "something", "at", "knowing", "santiago", "curse", "weinberg", "entitled", "whos", "be", "probably", "world", "freedom", "responsibility", "are", "by", "tragic", "backbone", "man", "stand", "inclination", "think", "gonna", "suggest", "places", "thank", "under", "punchline", "honor", "existence", "defending", "questions", "do", "manner", "down", "either", "son", "post", "than", "talk", "has", "up", "those", "possibly", "which", "otherwise", "need", "like", "my", "parties", "know", "santiagos", "rises", "who", "deep", "code", "death", "rather", "for", "weep", "life", "nor", "guarded", "can", "weapon", "not", "men", "said", "just", "live", "spent", "damn", "with", "truth", "marines", "neither", "time", "blanket"));
         expected1.put(1, set8);
 
-
         TreeMap<Integer, Set<String>> expected2 = new TreeMap<>();
         Set<String> set9 = new HashSet<>(Arrays.asList("capital", "test", "lets", "letters"));
         expected2.put(2, set9);
@@ -56,8 +55,6 @@ public class HandleTruthTest {
         expectedResults[2] = expected3;
         expectedResults[3] = expected4;
 
-
-
         //assertEquals(HandleTruth.wordCount(testInputs[1]),expected1);
         for (int i = 0; i < testInputs.length; i++) {
             TreeMap<Integer, Set<String>> result = HandleTruth.wordCount(testInputs[i]);
@@ -65,21 +62,3 @@ public class HandleTruthTest {
         }
     }
 }
-
-        /*//Make wordcount have an output of type TreeMap<Integer, Set<String>>
-        actual = HandleTruth.wordCount().entrySet();
-        expected = ;
-        assert(expected, actual);
-    }*/
-
-        /**
-         * output of TreeMap
-         * 18=[you]
-         * 9=[the]
-         * 8=[a, and, i]
-         * 6=[that]
-         * 5=[have, to]
-         * 3=[in, use, of, dont, we, on]
-         * 2=[lives, want, words, it, while, way, as, walls, what, provide, me, luxury, wall]
-         * 1=[explain, very, guns, saved, lieutenant, about, your, these, saves, would, pick, fathom, grotesque, incomprehensible, because, greater, give, sleeps, went, loyalty, myself, them, then, something, at, knowing, santiago, curse, weinberg, entitled, whos, be, probably, world, freedom, responsibility, are, by, tragic, backbone, man, stand, inclination, think, gonna, suggest, places, thank, under, punchline, honor, existence, defending, questions, do, manner, down, either, son, post, than, talk, has, up, those, possibly, which, otherwise, need, like, my, parties, know, santiagos, rises, who, deep, code, death, rather, for, weep, life, nor, guarded, can, weapon, not, men, said, just, live, spent, damn, with, truth, marines, neither, time, blanket]
-         */

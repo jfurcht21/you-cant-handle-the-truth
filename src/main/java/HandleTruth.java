@@ -23,10 +23,6 @@ public class HandleTruth {
             }
             wordMap.put(word, 1);
         }
-        /*
-        for (Map.Entry<String, Integer> entry : wordMap.entrySet()) {
-            System.out.println(entry);
-        }*/
 
         // sort the map based on number of occurrences
         for (Map.Entry<String, Integer> entry : wordMap.entrySet()) {
@@ -37,9 +33,6 @@ public class HandleTruth {
             sortedMap.put(entry.getValue(), values);
         }
         return sortedMap;
-        /*
-        for (Map.Entry<Integer, Set<String>> entry : sortedMap.entrySet()) {
-            System.out.println(entry);
-        }*/
+
     }
 }
