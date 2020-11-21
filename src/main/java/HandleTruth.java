@@ -6,6 +6,8 @@ public class HandleTruth {
         if(msg == null || msg == ""){
             return sortedMap;
         }
+        msg = msg.replaceAll("[-+.^:,]", "");
+
         // split the message into word set
         String[] words = msg.split(" ");
 
