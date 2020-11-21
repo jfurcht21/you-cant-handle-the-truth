@@ -2,7 +2,10 @@ import java.util.*;
 
 public class HandleTruth {
     public static TreeMap<Integer, Set<String>> wordCount(String msg) {
-
+        TreeMap<Integer, Set<String>> sortedMap = new TreeMap<>(Collections.reverseOrder());
+        if(msg == null || msg == ""){
+            return sortedMap;
+        }
         // split the message into word set
         String[] words = msg.split(" ");
 
@@ -26,7 +29,6 @@ public class HandleTruth {
         }*/
 
         // sort the map based on number of occurrences
-        TreeMap<Integer, Set<String>> sortedMap = new TreeMap<>(Collections.reverseOrder());
         for (Map.Entry<String, Integer> entry : wordMap.entrySet()) {
             int key = entry.getValue();
             Set<String> values = sortedMap.containsKey(key) ?
